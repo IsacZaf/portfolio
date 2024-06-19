@@ -5,7 +5,7 @@ module.exports = {
     title: `Portfolio`,
     description: `A portfolio site`,
     author: `@yourname`,
-    siteUrl: `localhost:8080`, 
+    siteUrl: `https://isacsportfolio.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,12 +13,11 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
     {
       resolve: `gatsby-source-contentful`,
