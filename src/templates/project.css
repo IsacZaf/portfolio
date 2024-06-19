@@ -1,0 +1,28 @@
+.project-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .project-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .project-screenshots {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .project-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .project-link {
+    color: #5a37c3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

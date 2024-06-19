@@ -1,0 +1,45 @@
+.contact-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .contact-image {
+    max-width: 200px;
+    margin: 20px auto;
+    width: 100%;
+  }
+  
+  .contact-info {
+    font-size: 1.1em;
+    margin: 20px 0;
+  }
+  
+  .contact-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #5a37c3;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    background: #4a2fa1;
+  }
+  
+  @media (max-width: 600px) {
+    .contact-container {
+      padding: 10px;
+    }
+    
+    .contact-info {
+      font-size: 1em;
+    }
+    
+    .contact-link {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  

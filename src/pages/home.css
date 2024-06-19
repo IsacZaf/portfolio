@@ -1,0 +1,17 @@
+.home-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .home-image {
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  
+  .home-description {
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  

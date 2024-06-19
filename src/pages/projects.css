@@ -1,0 +1,48 @@
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .project-screenshots {
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    margin-bottom: 10px;
+  }
+  
+  .project-link {
+    color: #5a37c3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .filter-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 300px;
+  }
+  

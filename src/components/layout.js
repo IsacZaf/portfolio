@@ -1,51 +1,29 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
+import React from 'react';
+import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
+import './layout.css';
 
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+const Layout = ({ children }) => (
+  <div>
+    <Helmet>
+      <title>My Portfolio</title>
+      <meta name="description" content="Welcome to my portfolio website where I showcase my projects and skills." />
+      <meta name="keywords" content="portfolio, developer, projects, skills" />
+      <meta name="author" content="Your Name" />
+    </Helmet>
+    <header>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+      </nav>
+    </header>
+    <main>{children}</main>
+    <footer>© {new Date().getFullYear()} My Portfolio</footer>
+  </div>
+);
 
-import Header from "./header"
-import "./layout.css"
-
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
-
-export default Layout
+export default Layout;
