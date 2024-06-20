@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Portfolio`,
     description: `A portfolio site`,
-    author: `@yourname`,
+    author: `Isac Zafar`,
     siteUrl: `https://isacsportfolio.netlify.app/`,
   },
   plugins: [
